@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -22,44 +21,30 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<!-- the logo is added in here -->
-					<div class="container">
-						<div class="logo">
-							<a href="../logo/inhabitent-logo-tent.svg"></a>
-							<h1 class="site-title"></h1>
-						</div>
-					</div>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+
+					<?php if (is_page( array('home','about'))) { ?>
+
+    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="logo" border="0"/>
+						</a>
+
+    			<?php } else{ ?>
+
+    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent.svg" alt="logo" border="0"/>
+						</a>
+
+    			<?php } ?>
+
+
+
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!-- this is for the main-navigation I add it!!!!  -->
-
-					<!-- <nav id='navigation-site' class="main-navigation clearfix" role="navigation">
-					<div class="main-navigation-container">
-						<ul id="primary-menu" class="menu">
-							<li>
-								<a href="#shop">Shop</a>
-							</li>
-							<li>
-								<a href="#journal">Journal</a>
-							</li>
-							<li>
-								<a href="#about">About</a>
-							</li>
-							<li>
-								<a href="#find-us">Find Us</a>
-							</li>
-						</ul>
-					</div>
-					</nav> -->
-
-						<!-- ************************************* -->
-
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-
-			<div id="content" class="site-content">

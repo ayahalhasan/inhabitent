@@ -1,0 +1,54 @@
+
+.site-description{
+  display: none;
+}
+
+.site-branding{
+  margin-left: 155px;
+  width: 50px;
+  height: auto;
+
+}
+
+.site-header {
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    // position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+}
+
+// .site-header.reverse-header {
+//     background-color: transparent;
+//     border-bottom: 0;
+//     position: absolute;
+//     text-shadow: 1px 1px 2px #323232;
+// }
+
+.site-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'novecento', sans-serif;
+	height: 55px;
+	position: fixed;
+	width:100%;
+	z-index: 3;
+
+	.main-navigation{
+			width: 40%;
+			li{
+				margin-left: 30px;
+				a{
+					color: #248a83;
+					text-transform: uppercase;
+				}// a
+
+			} //li
+
+		} //main-navigation
+
+	} // site-header
