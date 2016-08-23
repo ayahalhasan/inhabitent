@@ -4,7 +4,8 @@
 
 # Inhabitent- Project 4
 
-Summary 
+#Summary 
+
 In this project I use a custom wordpress theme that required useing PHP, JQuery, and CSS/SASS.
 
 # That language that use in this project: 
