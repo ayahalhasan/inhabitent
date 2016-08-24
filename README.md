@@ -8,7 +8,7 @@
 
 In this project I use a custom wordpress theme that required useing PHP, JQuery, and CSS/SASS.
 
-# That language that use in this project: 
+# The language that use in this project: 
 
 * JavaScript
 * JQuery
