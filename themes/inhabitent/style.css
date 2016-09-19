@@ -828,7 +828,7 @@ a.moretag {
   padding: .75rem 1.5rem;
   color: #000; }
   a.moretag:hover {
-    color: #fff; }
+    background-color: #248A83; }
 
 p {
   margin-bottom: 1.5rem;

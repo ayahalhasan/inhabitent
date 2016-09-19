@@ -17,9 +17,9 @@ get_header(); ?>
       </section>
 
 			<!-- this is for the Shop Container  -->
+			<h1>Shop Stuff</h1>
 
 	<section class="product-info container">
-      <h1>Shop Stuff</h1>
       <div class="product-type-wrapper">
 
         <?php $product_types = get_terms(array( 'taxonomy' => 'product-type') );?>

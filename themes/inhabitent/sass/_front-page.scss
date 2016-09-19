@@ -159,7 +159,7 @@ a.moretag{
   color: #000;
 
 &:hover {
-  color: #fff;
+  background-color: $color__green;
   }
 }
 
@@ -173,3 +173,5 @@ p {
     font-size: 1.3rem;
     margin-bottom: 3.75rem;
 }
+
+// adventures
