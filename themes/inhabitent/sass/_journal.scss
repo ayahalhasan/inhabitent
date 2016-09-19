@@ -5,40 +5,38 @@ journal-main {
 
 // This is for the single
 
-.single,
-.s1{
-  font-family: 'merriweather', sans-serif;
-  font-weight: normal;
-}
+.single, .s1{
+    font-family: 'merriweather', sans-serif;
+    font-weight: normal;
 
-.single,
-.site-content{
-  display: flex;
-  // margin-top: 100px;
-}
 
-.single
-.single-main {
-  padding-right: 40px;
-  margin-left: 70px;
-  margin-right: 30px;
-  border-right: 40px;
-}
+  .site-content{
+    display: flex;
+    margin-top: 100px;
+  }
 
-.single,
-.widget-area {
-  min-width: 25%;
-}
+  .single-main {
+    padding-right: 40px;
+    margin-left: 70px;
+    margin-right: 30px;
+    border-right: 40px;
+  }
 
-.single,
-.widget-area ul {
-  list-style: none;
+  .widget-area {
+    min-width: 25%;
+  }
+
+  .widget-area ul {
+    list-style: none;
+  }
 }
 
 
 // This is for the entary
+.enatry-title {
+  display: block;
 
-.entry-title a {
+ a {
   font-family: sans-serif;
   text-transform: uppercase;
   position: absolute;
@@ -49,28 +47,26 @@ journal-main {
   margin-top: 2.25rem;
   top: 0;
   left: 0;
-  background-color: #248a83;
+  background-color: $color__green;
   color: #fff;
   }
+}
 
 .entry-meta {
-  background-color: #248a83;
+  background-color: $color__green;
   bottom: 0;
   color: #fff;
   display: inline-block;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: 'novecento',sans-serif;
   padding: 1.00005rem 1.5rem;
   position: absolute;
   // right: 0;
   text-transform: uppercase;
 }
 
-.enatry-title {
-  display: block;
-}
 
-.blog
-.entry-contact p {
+
+.blog, .entry-contact p {
   font-family: 'merriweather' sans-serif;
   }
 
@@ -84,7 +80,7 @@ journal-main {
   font-family: 'novecento', sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  background: #248a83;
+  background: $color__green;
   color: #fff;
   border: none;
   border-radius: 0;

@@ -1,5 +1,18 @@
 // This is for the product archive
 
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 45px;
+  border-bottom: 1px dashed #c8c8c8;
+
+  h1{
+    font-family: 'merriweather', sans-serif;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 .page-title {
   font-size: 40px;
   clear: both;
@@ -10,7 +23,7 @@
 
 .product-image img {
   height: 200px;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 .product-grid {
@@ -21,7 +34,7 @@
 
 }
 
-.product-grid-item {
+.product-item {
   margin-bottom: 1.5rem;
   border: 1px solid #e1e1e1;
   max-width: 23%;
@@ -36,13 +49,17 @@
 
 }
 
-.product-type-wrapper{
+.product-wrapper{
   display: flex;
   margin-bottom: 20px;
-}
 
-.product-type-wrapper p {
-  margin: 10px 30px;
+  p {
+    margin: 10px 30px;
+  }
+
+  a {
+    color: #248a83;
+  }
 }
 
 .container {
@@ -63,13 +80,11 @@
   display: flex;
 }
 
-.single-product,
-.product-photo,
+.product-image,
 .product-content {
   flex: 0 1 50%;
 }
 
-.single-product,
 .product-photo {
   margin-top: 40px;
 }
@@ -83,14 +98,27 @@
 
 
 .product-title {
-  font-size: 40px;
-  color: #d99054;
+  background: #fff;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'merriweather',serif;
+  letter-spacing: 0;
+  line-height: 1.75;
+  padding-right: .25rem;
+  text-transform: none;
+
+  &:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: "...................................................";
+  }
 }
 
 .product-write-up {
   font-size: 16px;
   font-family: 'merriweather' sans-serif;
-
 }
 
 .product-content {
@@ -102,10 +130,9 @@
   line-height: 1.75;
 }
 
-.product-type-container{
-  border-bottom: 1px dashed #c8c8c8;
-	margin-bottom: 3rem;
-	}
+// .product-type-container{
+// 	margin-bottom: 3rem;
+// 	}
 
 // This is for the social-buttons
 .social-buttons span {

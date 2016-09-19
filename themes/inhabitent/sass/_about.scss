@@ -4,9 +4,8 @@
 	display: flex;
   justify-content: center;
   align-items: center;
-  }
 
-.hero-image	&:after {
+	&:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -14,26 +13,24 @@
   height: 0;
   }
 
-.hero-image h2{
+h2{
   font-family: 'novecento', sans-serif;
   color: #fff;
   font-size: 3rem;
   }
+}
 
 
-.about-page{
-  padding: 20px 150px;
+.about-page {
+  padding: 26px 316px;
+
+	h2{
+  	text-align: center;
+  	font-family:'merriweather', sans-serif;
+  	font-size: 2rem;
+  	text-transform: uppercase;
+  	color: $color__purple;
+  	letter-spacing: 3px;
   }
 
-.about-page  h3{
-  text-align: center;
-  font-family:'merriweather', sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #2f1339;
-  letter-spacing: 3px;
-  }
-
-.about-page  p{
-  font-family: 'merriweather', serif;
-  }
+}

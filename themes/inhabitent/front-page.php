@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<!-- this is for the Home img logo -->
-		
+
 		<main id="main" class="site-main" role="main">
       <section class="home-hero">
         <img src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-full.svg" alt="logo" />
@@ -46,7 +46,9 @@ get_header(); ?>
   <div class="front-page-posts">
   <ul class="journal-post container">
   	<?php
-  	$args = array( 'posts_per_page' => 3,
+  	$args = array(
+			'post_type' => 'post',
+			'posts_per_page' => 3,
 		  'order'=> 'DESC',
 	 		'orderby' => 'date' ); // returns an array of posts
 
@@ -78,29 +80,31 @@ get_header(); ?>
 
   </div>
 
-	<!-- This is for the Latest Adventure -->
+	<!-- Latest Adventure -->
 
 	<section class="adventures">
      <h1>Latest Adventures</h1>
-     <?php
-     $args = array( 'post_type' => 'adventure', 'order' => 'ASC' );
-   $adventures = new WP_Query( $args ); // instantiate our object
-   ?>
-   <div class="front-page-ads clearfix">
-   <?php if ( $adventures->have_posts() ) : ?>
-     <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
+		 <?php
+			   $args = array( 'post_type' => 'adventuer', 'order' => 'ASC' );
+			   $adventures = new WP_Query( $args ); // instantiate our object
+			?>
+			<?php if ( $adventures->have_posts() ) : ?>
+			   <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
 
-        <?php get_template_part('template-parts/content-adventure'); ?>
+					 <div class="adventure-wrapper">
+					 	<?php the_post_thumbnail( 'large' ); ?>
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<a href="<?php the_permalink(); ?>" >Read More</a>
+					 </div>
 
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-    </div>
-
+			   <?php endwhile; ?>
+			   <?php wp_reset_postdata(); ?>
+			<?php else : ?>
+			      <h2>Nothing found!</h2>
+			<?php endif; ?>
     <div class="clearfix more-adventures">
     <a href ="<?php echo get_post_type_archive_link( 'adventure' ); ?>"> More Adventures </a></div>
-  <?php else : ?>
-    <h2>Nothing found!</h2>
-  <?php endif; ?>
+
 </section>
 
 </main><!-- #main -->

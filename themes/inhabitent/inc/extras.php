@@ -80,17 +80,22 @@ function inhabitent_header() {
 	if ( !is_page_template("about.php") ) {
 		return;
 	}
-	$background_image = CFS()->get('header_photo');
+	$background_image = CFS()->get('image');
+		if (!$background_image){
+			return;
+		}
 	$custom_css = "
-		.about-header{
-		 background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-		 url('$background_image') center center no-repeat;
+		.hero-image{
+		 background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('$background_image') center center no-repeat;
 		 background-size: cover;
+		 height: 100vh;
 	 }";
 	 wp_add_inline_style( 'inhabitent-style', $custom_css );
  }
-
 add_action( 'wp_enqueue_scripts', 'inhabitent_header' );
+
+// Display up to 16 product on Product Archive Page (shop)
+
 function inhabitent_filter_product_query( $query ) {
 	if ( (is_post_type_archive('product') || is_tax('product_type') ) && !is_admin() && $query->is_main_query() ) {
 		$query->set( 'orderby', 'title' );

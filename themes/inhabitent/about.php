@@ -5,28 +5,24 @@
  *
  * @package RED_Starter_Theme
 
- * Template Name: About
+ * Template Name: About Template
  */
  get_header(); ?>
 
  	<div id="primary" class="content-area">
- 		<main id="main" class="main-site" role="main">
+ 		<main id="main" class="main-site">
  		<div class="hero-image">
  			<h2><?php the_title(); ?></h2>
  		</div>
 
- <div class="about-page container">
+    <div class="about-page"> 
 
- 		<?php while ( have_posts() ) : the_post(); ?>
+ 		   <?php while ( have_posts() ) : the_post(); ?>
+ 			     <?php echo CFS()->get( 'our_story' ); ?>
+ 			       <?php echo CFS()->get( 'our_team' ); ?>
 
- 			<h3><?php echo CFS()->get( 'our_story_title' ); ?></h3>
- 			<p><?php echo CFS()->get( 'our_story_paragraph' ); ?></p>
- 			<h3><?php echo CFS()->get( 'our_team_title' ); ?></h3>
- 			<p><?php echo CFS()->get( 'our_team_paragraph' ); ?></p>
-
-
- 		<?php endwhile;  ?>
- 	</div>
+ 		        <?php endwhile;  ?>
+ 	  </div>
  </div>
 
  </div>
