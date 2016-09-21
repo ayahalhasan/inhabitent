@@ -41,7 +41,6 @@
 
 				</div><!-- .branding -->
 
-
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<i class="fa fa-search search-toggle" aria-hidden="true"></i>

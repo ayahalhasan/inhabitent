@@ -988,30 +988,39 @@ h2 {
     color: #2f1339;
     letter-spacing: 3px; }
 
-.sidebar {
-  width: 23%;
-  padding-left: 50px;
-  margin-left: 60px;
-  border-left: solid #e1e1e1 1px; }
-
-.sidebar ul {
-  list-style: none;
-  margin: 0 auto; }
-
-.sidebar a {
-  text-decoration: none; }
-
-.sidebar p {
-  font-family: 'merriweather', sans-serif; }
-
-.flex-container {
-  display: -ms-flexbox;
-  display: flex; }
-
 .widget-title {
-  text-transform: uppercase;
-  font-family: 'novecento', sans-serif;
-  letter-spacing: 2px; }
+  font-family: 'novecento', serif;
+  font-size: 1.5rem;
+  color: black; }
+
+.textwidget .contact-info {
+  margin-bottom: -5px; }
+
+.textwidget a {
+  color: #248A83;
+  font-family: 'merriweather', serif; }
+
+.textwidget span {
+  color: #2f1339;
+  font-family: 'merriweather', serif; }
+
+.day-of-week {
+  font-family: 'merriweather', serif; }
+
+.widget_archive ul {
+  list-style-type: none;
+  margin-left: -2rem; }
+  .widget_archive ul a {
+    color: #248A83;
+    font-family: 'merriweather', serif; }
+
+.widget-sidebar {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 80px; }
+  .widget-sidebar .widget-area {
+    margin-top: 50px; }
+  .widget-sidebar .widget-title {
+    font-size: 1.5rem; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
@@ -1129,11 +1138,17 @@ header {
     color: #248a83;
     text-decoration: none; }
 
-.container {
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1120px; }
+.entry-title h2 {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0; }
 
 .single-products
 .site-content
