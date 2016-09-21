@@ -17,7 +17,7 @@ get_header(); ?>
       </section>
 
 			<!-- this is for the Shop Container  -->
-			<h1>Shop Stuff</h1>
+			<h2>Shop Stuff</h2>
 
 	<section class="product-info container">
       <div class="product-type-wrapper">
@@ -82,8 +82,8 @@ get_header(); ?>
 
 	<!-- Latest Adventure -->
 
-	<section class="adventures">
-     <h1>Latest Adventures</h1>
+	<section class="adventures container">
+     <h2>Latest Adventures</h2>
 		 <?php
 			   $args = array( 'post_type' => 'adventuer', 'order' => 'ASC' );
 			   $adventures = new WP_Query( $args ); // instantiate our object
@@ -93,8 +93,11 @@ get_header(); ?>
 
 					 <div class="adventure-wrapper">
 					 	<?php the_post_thumbnail( 'large' ); ?>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<a href="<?php the_permalink(); ?>" >Read More</a>
+						<div class="story-info">
+
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<a href="<?php the_permalink(); ?>" >Read More</a>
+						</div>
 					 </div>
 
 			   <?php endwhile; ?>

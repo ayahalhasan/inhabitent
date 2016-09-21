@@ -13,8 +13,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 <!-- List of the Taxonomy terms -->
-
-			<header class="page-header archive-product">
+	<div class="container">
+		<header class="page-header archive-product">
 				<h1>Shop Stuff</h1>
         <?php $terms = get_terms( 'product-type' ); ?>
         <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):?>
@@ -57,6 +57,7 @@ get_header(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
+	</div><!-- .container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

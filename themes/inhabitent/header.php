@@ -19,8 +19,8 @@
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="header">
-				<div class="site-header container">
+			<header id="masthead" class="site-header reverse">
+				<div class="container">
 
 				<div class="branding">
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
@@ -34,7 +34,7 @@
     			<?php } else{ ?>
 
     				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent.svg" alt="logo" border="0"/>
+						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent.svg" alt="logo2" border="0"/>
 						</a>
 
     			<?php } ?>
@@ -43,9 +43,12 @@
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<i class="fa fa-search search-toggle" aria-hidden="true"></i>
+					<div class="search-header">
+						<?php get_search_form(); ?>
 				</nav><!-- #site-navigation -->
-			 </div>
+				</div>
 
 			</header><!-- #masthead -->
+		</div>

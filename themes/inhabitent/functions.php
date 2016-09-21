@@ -89,6 +89,9 @@ function inhabitent_starter_scripts() {
 	wp_enqueue_script('inhabitent-font-awsome', 'https://use.fontawesome.com/e2d74b42e9.js', array(), '4.6.3', false );
 
 	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'inhabitent-search-script', get_template_directory_uri() . '/build/js/search-bar.min.js', array('jquery'), false, true);
+
 	wp_enqueue_script('tent_comment', get_template_directory_uri(). '/js/theme_scripts.js', array( 'jquery' ), false, true);
 
 	wp_localize_script( 'tent_comment', 'comment_vars', array(

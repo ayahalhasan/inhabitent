@@ -1,19 +1,36 @@
 
-.header {
-	height: 55px;
-	width:100%;
-	z-index: 3;
-	position: fixed;
-	top:0;
+.site-header.reverse {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232;
 }
 
 .site-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	font-family: 'novecento', sans-serif;
-	height: 100%;
+	background-color: hsla(0,0%,100%,.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3;
+
+	input[type=search] {
+    border: 0;
+    background: transparent;
+    font-family: 'novecento',sans-serif;
+    margin-left: .75rem;
+    padding: 0 .3rem;
+    text-transform: uppercase;
+	}
+
+	.container {
+		width: 1120px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .site-description {
@@ -60,13 +77,13 @@
 }
 
 
-.home,.page-template-about, .single-adventure{
+.home, .page-template-about, .single-adventure{
 
-	.logo {
+	.site-logo {
 		width: 50px;
 		height: 50px;
 		background-image: url(../../images/logos/inhabitent-logo-tent-white.svg);
-		background-size:50px 50px;
+		background-size: 50px 50px;
 	}
 
 	.main-navigation {
@@ -78,3 +95,46 @@
 		text-shadow: 1px 1px 1px #222;
 	}
 }
+
+.search-header {
+
+	fieldset{
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	input {
+		background: none;
+		border: none;
+		box-shadow: none;
+		display: none;
+	}
+
+	label {
+		color: #2f1339;
+    // display: block;
+    font-family: 'novecento',sans-serif;
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+	}
+
+}
+
+
+
+.logo{
+	width: 50px;
+	height: 50px;
+	background-image: url(../../images/inhabitent-logo-tent.svg);
+	background-size:50px 50px;
+}
+
+.logo2{
+		width: 50px;
+		height: 50px;
+		background-image: url(../../images/inhabitent-logo-tent.svg);
+		background-size:50px 50px;
+	}
