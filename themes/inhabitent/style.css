@@ -1331,10 +1331,6 @@ journal-main {
 .blog, .entry-contact p {
   font-family: 'merriweather' sans-serif; }
 
-.entry-header {
-  line-height: 0;
-  position: relative; }
-
 .black-btn {
   text-transform: uppercase;
   font-family: 'novecento', sans-serif;
@@ -1348,7 +1344,7 @@ journal-main {
   line-height: 1; }
 
 .entry-header {
-  line-height: 0;
+  line-height: 1.25;
   position: relative; }
   .entry-header h2 {
     background-color: #248a83;
@@ -1371,6 +1367,17 @@ journal-main {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
+
+.blog .entry-contact {
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: "novecento",sans-serif;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
 
 .adventure-hero {
   background-size: cover;

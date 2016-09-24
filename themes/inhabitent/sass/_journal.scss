@@ -65,11 +65,9 @@ journal-main {
 .blog, .entry-contact p {
   font-family: 'merriweather' sans-serif;
   }
-
-.entry-header {
-  line-height: 0;
-  position: relative;
-}
+  // .entry-contact {
+  //   max-width: 70%;
+  // }
 
 .black-btn {
   text-transform: uppercase;
@@ -85,7 +83,7 @@ journal-main {
 }
 
 .entry-header{
-  line-height: 0;
+  line-height: 1.25;
   position: relative;
 
 
@@ -116,5 +114,19 @@ journal-main {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
+  }
+}
+
+.blog {
+  .entry-contact {
+    background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "novecento",sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
   }
 }
