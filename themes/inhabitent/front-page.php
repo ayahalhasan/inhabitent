@@ -84,13 +84,15 @@ get_header(); ?>
 
 	<section class="adventures container">
      <h2>Latest Adventures</h2>
+		 <ul class="clearfix">
+
 		 <?php
-			   $args = array( 'post_type' => 'adventuer', 'order' => 'ASC' );
+			   $args = array( 'post_type' => 'adventuer', 'order' => 'ASC', 'posts_per_page' => 4 );
 			   $adventures = new WP_Query( $args ); // instantiate our object
 			?>
 			<?php if ( $adventures->have_posts() ) : ?>
 			   <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-
+					 <li class="post-type">
 					 <div class="adventure-wrapper">
 					 	<?php the_post_thumbnail( 'large' ); ?>
 						<div class="story-info">
@@ -99,14 +101,15 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>" >Read More</a>
 						</div>
 					 </div>
-
+					 </li>
 			   <?php endwhile; ?>
 			   <?php wp_reset_postdata(); ?>
 			<?php else : ?>
 			      <h2>Nothing found!</h2>
 			<?php endif; ?>
     <div class="clearfix more-adventures">
-    <a href ="<?php echo get_post_type_archive_link( 'adventure' ); ?>"> More Adventures </a></div>
+    <a href ="<?php echo get_post_type_archive_link( 'adventuer' ); ?>"> More Adventures </a></div>
+	</ul>
 
 </section>
 

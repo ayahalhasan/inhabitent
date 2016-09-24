@@ -18,7 +18,7 @@ get_header(); ?>
 				<section class="adventure-hero" style="background-image:url(<?php echo $src[0]; ?>);"></section>
 
 		<?php endif; ?>
-		<div class=" container">
+		<div class="container">
 
 		<div class="anchor"></div>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

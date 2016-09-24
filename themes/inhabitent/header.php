@@ -25,19 +25,8 @@
 				<div class="branding">
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
-					<?php if (is_page( array('home','about'))) { ?>
-
-    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="logo" border="0"/>
+    				<a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						</a>
-
-    			<?php } else{ ?>
-
-    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img class="site-logo"src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent.svg" alt="logo2" border="0"/>
-						</a>
-
-    			<?php } ?>
 
 				</div><!-- .branding -->
 
@@ -51,3 +40,5 @@
 
 			</header><!-- #masthead -->
 		</div>
+
+		<div id="content" class="site-content">

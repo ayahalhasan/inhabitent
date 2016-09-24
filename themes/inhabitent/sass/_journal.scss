@@ -5,10 +5,9 @@ journal-main {
 
 // This is for the single
 
-.single, .s1{
+.single-post, .s1{
     font-family: 'merriweather', sans-serif;
     font-weight: normal;
-
 
   .site-content{
     display: flex;
@@ -30,7 +29,6 @@ journal-main {
     list-style: none;
   }
 }
-
 
 // This is for the entary
 .enatry-title {
@@ -64,8 +62,6 @@ journal-main {
   text-transform: uppercase;
 }
 
-
-
 .blog, .entry-contact p {
   font-family: 'merriweather' sans-serif;
   }
@@ -86,4 +82,39 @@ journal-main {
   border-radius: 0;
   cursor: pointer;
   line-height: 1
+}
+
+.entry-header{
+  line-height: 0;
+  position: relative;
+
+
+  h2{
+    background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.single
+.blog,  {
+  .content-area {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    // display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
 }

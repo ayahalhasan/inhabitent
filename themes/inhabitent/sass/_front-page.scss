@@ -11,53 +11,61 @@
   max-width: 23.5%;
   padding: .75rem;
   justify-content: space-between;
-
-  &:hover{
-    border-color: #d99054;
+  }
+.product-icon &:hover{
+  border-color: #d99054;
   }
 
-  .product-type-blocks img {
-    height: 70px;
-    width: 70px;
+.product-icon .product-type-blocks img {
+  height: 70px;
+  width: 70px;
   }
 
-  img {
-   width: 80px;
+.product-icon img {
+  width: 80px;
   }
 
-  a {
-    background: #248a83;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: 'novecento',sans-serif;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-
-  a:hover{
-    background-color: #19625d;
-  }
-
- p{
-    font-family: 'merriweather',sans-serif;
-  }
+.product-icon a {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.product-icon a:hover{
+  background-color: #19625d;
+}
+.product-icon p{
+font-family: 'merriweather',sans-serif;
 }
 
 .journal-picture {
   line-height: 0;
-
- img {
-    min-height: 250px;
-    max-height: 250px;
-    width: 380px;
-  }
 }
+.journal-picture img {
+  min-height: 250px;
+  max-height: 250px;
+  width: 380px;
+
+  }
+
+.home h2 {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+
 
 // This is for the home hero using liner grardient
 .home-hero {
@@ -93,22 +101,22 @@
 .journal-post{
   display: flex;
   justify-content: space-between;
-
- li {
-   width: 32%;
-   list-style-type: none;
-  }
 }
 
-// .home h2 {
-//   font-size: 38.4px;
-//   font-size: 2.4rem;
-//   font-weight: 400;
-//   margin-bottom: 3.75rem;
-//   text-align: center;
-//   color: #404040;
-//   font-family: 'novecento', sans-serif;
-// }
+.journal-post li {
+  width: 32%;
+  list-style-type: none;
+}
+
+.home h2 {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  color: #404040;
+  // font-family: 'novecento', sans-serif;
+}
 
 .front-page-posts{
  display: flex;
@@ -119,40 +127,23 @@
   border-top-width: 5px;
   padding-bottom: 17px;
   padding-left: 10px;
-
-  span{
-    font-family: 'merriweather',sans-serif;
-    font-weight: normal;
-    font-size: .75rem;
-    }
-
-  h3{
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    }
-
-  a {
-    text-decoration: none;
-    color: #248a83;
-
-    &:hover{
-      outline: 0;
-      text-decoration: none;
-      color: #2f1339;
-    }
-  }
-
 }
-a {
+
+.information-journal span{
+  font-family: 'merriweather',sans-serif;
+  font-weight: normal;
+  font-size: .75rem;
+}
+
+.information-journal h3{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+a :hover{
+  outline: 0;
+  text-decoration: none;
   color: #2f1339;
-
-  &:hover{
-    outline: 0;
-    text-decoration: none;
-    color: #fff;
-  }
-
 }
 
 a.moretag{
@@ -161,18 +152,15 @@ a.moretag{
   line-height: 1;
   padding: .75rem 1.5rem;
   color: #000;
-  text-decoration: none;
-
-&:hover {
-  background-color: $color__green;
-  border: 1px solid $color__green;
+}
+a.moretag  &:hover {
   color: #fff;
   }
-}
 
 p {
   margin-bottom: 1.5rem;
   display: block;
+
 }
 
 .home .latest-entries h3 {
@@ -181,44 +169,29 @@ p {
     margin-bottom: 3.75rem;
 }
 
-// adventures
+// Latest Adventures
 
-.home h2 {
-  font-size: 38.4px;
-  font-size: 2.4rem;
-  font-weight: 400;
-  margin-bottom: 3.75rem;
-  text-align: center;
-}
+.home {
+  .adventures{
+    margin-bottom: 4.5rem;
+  }
+  .clearfix {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
 
-h2 {
-  color: #2f1339;
-  font-size: 33.6px;
-  font-size: 2.1rem;
-  margin-bottom: 1.5rem;
-  clear: both;
-  font-family: 'novecento',sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+  .post-type {
+    border-right: 20px solid #fff;
+    width: 50%;
+  }
 
-// .adventure-wrapper {
-//     bottom: 0;
-//     left: 0;
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     z-index: 1;
-//   }
-//
-// .home .adventures div {
-//   float: left;
-//   position: relative;
-//   overflow: hidden;
-// }
-//
-//
-// .home .adventures div:first-child {
-//     border-right: 20px solid #fff;
-//     width: 50%;
-// }
+  .adventure-wrapper {
+    bottom: 0;
+    left: 0;
+    // position: absolute;
+    right: 0;
+    top: 0;
+    // z-index: 1;
+  }
+ }
