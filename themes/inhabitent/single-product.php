@@ -19,16 +19,15 @@ get_header(); ?>
       			<?php the_post_thumbnail( 'large' ); ?>
       		<?php endif; ?>
 
-      		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
       		<div class="entry-meta">
-      			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+      			<!-- <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> -->
       		</div><!-- .entry-meta -->
       	</header><!-- .entry-header -->
 
       	<div class="entry-content">
-          <?php echo CFS()->get( 'product_price' ); ?>
-      		<?php the_content(); ?>
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php echo '<h3>'.CFS()->get( 'product_price' ).'</h3>'; ?>      		<?php the_content(); ?>
 
           <div class="social-buttons">
 							<span><i class="fa fa-facebook" aria-hidden="true"></i><p>Like</p></span>

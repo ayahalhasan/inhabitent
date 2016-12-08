@@ -12,6 +12,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<div class="search-home-wrapper container">
+			<div class="search-box">
+
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
@@ -48,7 +51,9 @@ get_header(); ?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
+			
+		</div>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

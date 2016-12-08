@@ -13,6 +13,7 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
       <section class="home-hero">
+				<h2 class="site-title screen-reader-text">Inhabitent</h2>
         <img src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-full.svg" alt="logo" />
       </section>
 
@@ -55,20 +56,12 @@ get_header(); ?>
   	$postslist = get_posts( $args );
   	foreach ( $postslist as $post ) :
   	setup_postdata( $post ); ?>
-
 		<?php /* Content from your array of post results goes here */ ?>
-
-
   	<li >
-  		<div class="journal-picture">
-  		<?php the_post_thumbnail( 'large' ); ?>
-  		</div>
+  		<div class="journal-picture"> <?php the_post_thumbnail( 'large' ); ?></div>
   			<div class="information-journal">
-
-  			<span>
   			<?php ('inhabitent_posted_on') ; ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-  			</span>
-  			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+				<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
   			<a class="moretag" href="<?php the_permalink(); ?>">Read Entry</a>
   			</div>
   	</li>
@@ -98,7 +91,7 @@ get_header(); ?>
 						<div class="story-info">
 
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<a href="<?php the_permalink(); ?>" >Read More</a>
+							<a class="btn" href="<?php the_permalink(); ?>" >Read More</a>
 						</div>
 					 </div>
 					 </li>
@@ -107,9 +100,9 @@ get_header(); ?>
 			<?php else : ?>
 			      <h2>Nothing found!</h2>
 			<?php endif; ?>
-    <div class="clearfix more-adventures">
-    <a href ="<?php echo get_post_type_archive_link( 'adventuer' ); ?>"> More Adventures </a></div>
 	</ul>
+	<div class="clearfix more-adventures">
+	<a href ="<?php echo get_post_type_archive_link( 'adventuer' ); ?>"> More Adventures </a></div>
 
 </section>
 
