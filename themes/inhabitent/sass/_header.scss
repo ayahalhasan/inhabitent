@@ -1,21 +1,19 @@
 .site-header {
 	background-color: hsla(0,0%,100%,.85);
-  border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
-  position: fixed;
-  // transition: top .5s linear;
-  width: 100%;
-  z-index: 3;
-
+	border-bottom: 1px solid #e1e1e1;
+	padding: 0.5rem 0;
+	position: fixed;
+	// transition: top .5s linear;
+	width: 100%;
+	z-index: 3;
 	input[type=search] {
-    border: 0;
-    background: transparent;
-    font-family: 'novecento',sans-serif;
-    margin-left: .75rem;
-    padding: 0 .3rem;
-    text-transform: uppercase;
+		border: 0;
+		background: transparent;
+		font-family: 'novecento',sans-serif;
+		margin-left: 0.75rem;
+		padding: 0 0.3rem;
+		text-transform: uppercase;
 	}
-
 	.container {
 		width: 1120px;
 		margin: 0 auto;
@@ -24,111 +22,94 @@
 		justify-content: space-between;
 	}
 }
-
 .site-description {
 	position: absolute;
-  top: -9999px;
-  left: -9999px;
+	top: -9999px;
+	left: -9999px;
 }
-
 .branding {
 	width: 50px;
 	height: auto;
-
-  .site-logo{
-    background-image: url(../../images/logos/inhabitent-logo-tent.svg);
-    background-size: 50px 50px;
-    height: 50px;
-    width: 50px;
-    display: block;
-  }
+	.site-logo {
+		background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+		background-size: 50px 50px;
+		height: 50px;
+		width: 50px;
+		display: block;
+	}
 }
-
 .main-navigation {
 	width: 60%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-
 	.search {
 		margin-left: 15px;
 	}
-
 	li {
 		margin-left: 15px;
-
 		a {
 			color: $color__green;
 			text-transform: uppercase;
-
-		&:hover {
-			text-decoration: none;
-			color: $color__yellow;
+			&:hover {
+				text-decoration: none;
+				color: $color__yellow;
 			}
 		}
 	}
 	.search-toggle {
-		color:$color__green;
-
-	&:hover {
-		color: $color__yellow;
-	 }
+		color: $color__green;
+		&:hover {
+			color: $color__yellow;
+		}
 	}
 }
-
-
-.home, .page-template-about, .single-adventure{
-
-  .site-header {
-    background-color: transparent;
-    border-bottom: 0;
-    text-shadow: 1px 1px 2px #323232;
-  }
-
+.home,
+.page-template-about,
+.single-adventure {
+	.site-header {
+		background-color: transparent;
+		border-bottom: 0;
+		text-shadow: 1px 1px 2px #323232;
+	}
 	.site-logo {
 		width: 50px;
 		height: 50px;
-		background-image: url(../../images/logos/inhabitent-logo-tent-white.svg);
+		background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
 		background-size: 50px 50px;
 	}
-
 	.main-navigation {
 		a {
 			text-shadow: 1px 1px 1px #222;
-      color: #fff;
+			color: #fff;
 		}
-    i {
-      color: #fff;
-    }
+		i {
+			color: #fff;
+		}
 	}
 	.search-toggle {
 		text-shadow: 1px 1px 1px #222;
 	}
 }
-
 .search-header {
-
-	fieldset{
+	fieldset {
 		border: none;
 		margin: 0;
 		padding: 0;
 	}
-
 	input {
 		background: none;
 		border: none;
 		box-shadow: none;
 		display: none;
 	}
-
 	label {
 		color: #2f1339;
-    // display: block;
-    font-family: 'novecento',sans-serif;
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
+		// display: block;
+		font-family: 'novecento',sans-serif;
+		font-size: 17.6px;
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
 	}
-
 }

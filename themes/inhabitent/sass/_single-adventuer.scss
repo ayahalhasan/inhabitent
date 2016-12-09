@@ -1,25 +1,21 @@
 .adventure-hero {
-  background-size: cover;
-  height: 100vh;
+    background-size: cover;
+    height: 100vh;
 }
-
 .adventure {
-	padding: 30px 160px;
-
-	.adventure-header {
-		font-family: 'merriweather', sans-serif;
-		letter-spacing: 2px;
-		line-height: 45px;
-	}
-
-	p {
-		font-family: 'merriweather', sans-serif;
-	}
-
-	h2{
-		font-family:  'novecento', sans-serif;
-		font-weight: 200;
-	  font-size: 1.4rem;
-	  margin-top: -25px;
-	}
+    padding: 30px 160px;
+    .adventure-header {
+        font-family: 'merriweather', sans-serif;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    p {
+        font-family: 'merriweather', sans-serif;
+    }
+    h2 {
+        font-family: 'novecento', sans-serif;
+        font-weight: 200;
+        font-size: 1.4rem;
+        margin-top: -25px;
+    }
 }
