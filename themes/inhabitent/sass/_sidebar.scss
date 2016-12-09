@@ -1,0 +1,42 @@
+//Sidebar Widget
+.widget-title {
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+}
+.widget-area {
+    margin-top: 80px;
+    h2 {
+        color: $color__purple;
+    }
+}
+.sidebar {
+    width: 23%;
+    padding-left: 50px;
+    margin-left: 60px;
+    border-left: solid #e1e1e1 1px;
+    ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+    }
+    p {
+        font-family: 'merriweather', sans-serif;
+    }
+}
+.flex-container {
+    display: flex;
+}
+//Archives Widget
+.widget_archive {
+    ul {
+        list-style-type: none;
+        margin-left: -2rem;
+        a {
+            color: $color__green;
+            font-family: 'novecento' sans-serif;
+        }
+    }
+}

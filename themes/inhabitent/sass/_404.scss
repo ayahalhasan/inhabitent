@@ -1,0 +1,35 @@
+.error404 {
+    .page-title {
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+    .page-content {
+        font-family: 'merriweather' serif;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: $color__purple;
+        font-family: 'merriweather' serif;
+    }
+    ul {
+        list-style-type: none;
+        margin-left: -2.5rem;
+    }
+    a {
+        color: $color__green;
+    }
+    .search-404 {
+        margin-left: -5px;
+        fieldset {
+            border: none;
+        }
+        button {
+            display: none;
+        }
+        input {
+            color: $color__green;
+            font-family: 'merriweather' serif;
+        }
+    }
+}
